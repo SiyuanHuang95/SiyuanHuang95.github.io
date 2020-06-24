@@ -282,7 +282,7 @@
 
 <p>Unlike the normal camera, thermal cameras are not affected by the demanding conditions like poor illumination and presence of environmental obstacle since they are sensing the Long Wave Infrared (LWIR) part of the electromagnetic spectrum.</p>
 
-<p><img src="../images/project/ma_thermal_camera.png" alt="comparison" style="zoom:30%;" /></p>
+<p><img src="https://s1.ax1x.com/2020/06/25/N0COAg.png" alt="comparison" style="zoom:50%;" /></p>
 
 <h3 id="why-16-bit-pipeline">Why 16-Bit Pipeline:</h3>
 
@@ -300,23 +300,23 @@
   </li>
 </ul>
 
-<p><img src="../images/project/ma_agc_problem.png" alt="rescale_problem" style="zoom:30%;" /></p>
+<p><img src="https://s1.ax1x.com/2020/06/25/N0CHnf.png" alt="rescale_problem" style="zoom:40%;" /></p>
 
 <h2 id="our-frontend-design">Our Frontend Design:</h2>
 
 <p>The front-end has two pipelines. For image processing, including feature detection and feature tracking, we use the 16-bit full-size image. At the same time, we use AGC to rescale the image to 8-bit for loop-closure detection. However, OpenCV does not support the 16-bit image operator fully, so we have to implement some algorithms ourselves.</p>
 
-<p><img src="../images/project/ma_frontend.png" alt="frontend" style="zoom:50%;" /></p>
+<p><img src="https://s1.ax1x.com/2020/06/25/N0CbB8.png" alt="frontend" style="zoom:50%;" /></p>
 
 <h2 id="result">Result:</h2>
 
 <h3 id="without-loop-closure">Without Loop-Closure:</h3>
 
-<p><img src="../images/project/ma_result_without.png" alt="result" style="zoom:50%;" /></p>
+<p><img src="https://s1.ax1x.com/2020/06/25/N0CXNQ.png" alt="result" style="zoom:50%;" /></p>
 
 <h3 id="with-loop-closure">With Loop-Closure:</h3>
 
-<p><img src="../images/project/ma_results.png" style="zoom:70%;" /></p>
+<p><img src="https://s1.ax1x.com/2020/06/25/N0Cjhj.png" style="zoom:70%;" /></p>
 
 
         
