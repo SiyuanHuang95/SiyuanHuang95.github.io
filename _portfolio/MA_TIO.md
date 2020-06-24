@@ -1,10 +1,8 @@
-```
 ---
 title: "Motion Estimation based on Thermal Inertial Odometry "
 excerpt: "This thesis proposes a thermal-inertial odometry (TIO) framework based on the visual-inertial odometry framework considering the compatibility between those two. The TIO is tailored to utilize the full-size (16-Bit) thermal image data in feature detection and feature tracking. In parallel, a rescaled image (8-Bit) is used for loop-closure detection. The proposed TIO framework was validated with extensive datasets, including daytime and night-time scenes.<br/><img src='/images/project/ma_profile.png'>"
 collection: portfolio
 ---
-```
 
 ## Abstract
 
