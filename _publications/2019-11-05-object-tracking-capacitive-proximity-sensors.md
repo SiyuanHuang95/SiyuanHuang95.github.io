@@ -5,7 +5,7 @@ permalink: /publication/2019-11-05-object-tracking-capacitive-proximity-sensors
 excerpt: "In this work, an object tracking method on capac-itive  proximity sensor is presented. Arranged as a vector and installed  in the sidewalls of a work table with a robot, the sesensors are able to detect proximity events in  the near field of the workspace, including human approaching the table or interacting with the robot."
 date: 2019-11-05
 venue: 'IROS 2019 Workshop'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
+paperurl: 'https://hri.iit.it/storage/iros-workshop2019/IROS-EPHRC_2019_paper_1.pdf'
 citation: 'Siyuan Huang, Hosam Alagi and Bj ̈orn Hein,
 2019. IROS 2019 Workshop.'
 ---
@@ -14,4 +14,4 @@ citation: 'Siyuan Huang, Hosam Alagi and Bj ̈orn Hein,
 
 
 
-[Download paper here](https://hri.iit.it/storage/iros-workshop2019/IROS-EPHRC_2019_paper_1.pdf)
+[Download paper here](http://academicpages.github.io/files/paper2.pdf)
