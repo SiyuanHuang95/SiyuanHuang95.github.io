@@ -19,7 +19,7 @@
 
 
 
-<title>Motion Estimation based on Thermal Inertial Odometry  - Seeing the World.</title>
+<title>Student Assistant at IPR, Safety in Robotics - Seeing the World.</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="Seeing the World.">
-<meta property="og:title" content="Motion Estimation based on Thermal Inertial Odometry">
+<meta property="og:title" content="Student Assistant at IPR, Safety in Robotics">
 
 
-  <link rel="canonical" href="https://siyuanhuang95.github.io/portfolio/MA_TIO/">
-  <meta property="og:url" content="https://siyuanhuang95.github.io/portfolio/MA_TIO/">
+  <link rel="canonical" href="https://siyuanhuang95.github.io/portfolio/2019-12-31-IPR_Hiwi/">
+  <meta property="og:url" content="https://siyuanhuang95.github.io/portfolio/2019-12-31-IPR_Hiwi/">
 
 
 
-  <meta property="og:description" content="From Nov.2019 to June.2020 I am working with Prof. Dr.-Ing. Gert F. Trommer and M.Sc. Christopher Doer to develop a Thermal-Inertial Odometry framework to enable stable and robust motion estimation in the visually-degraded environment, lile dark evening. ">
+  <meta property="og:description" content="From Nov. 2018 to Dez. 2019, I was the student assistant at Institute for Anthropomatics and Robotics (IAR) - Intelligent Process Automation (IPR) with Prof.Dr.-Ing Torsten Kroeger and M.Sc. Woo-Jeong Baek, where we focused on the safe interaction between robotics and human and safety sensor configuration. ">
 
 
 
@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-06-15T00:00:00+02:00">
+  <meta property="article:published_time" content="2019-12-31T00:00:00+01:00">
 
 
 
@@ -253,21 +253,21 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Motion Estimation based on Thermal Inertial Odometry">
-    <meta itemprop="description" content="From Nov.2019 to June.2020 I am working with Prof. Dr.-Ing. Gert F. Trommer and M.Sc. Christopher Doer to develop a Thermal-Inertial Odometry framework to enable stable and robust motion estimation in the visually-degraded environment, lile dark evening. ">
-    <meta itemprop="datePublished" content="June 15, 2020">
+    <meta itemprop="headline" content="Student Assistant at IPR, Safety in Robotics">
+    <meta itemprop="description" content="From Nov. 2018 to Dez. 2019, I was the student assistant at Institute for Anthropomatics and Robotics (IAR) - Intelligent Process Automation (IPR) with Prof.Dr.-Ing Torsten Kroeger and M.Sc. Woo-Jeong Baek, where we focused on the safe interaction between robotics and human and safety sensor configuration. ">
+    <meta itemprop="datePublished" content="December 31, 2019">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Motion Estimation based on Thermal Inertial Odometry
+          <h1 class="page__title" itemprop="headline">Student Assistant at IPR, Safety in Robotics
 </h1>
           
         
         
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-06-15T00:00:00+02:00">June 15, 2020</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2019-12-31T00:00:00+01:00">December 31, 2019</time></p>
         
         
              
@@ -277,52 +277,35 @@
       
 
       <section class="page__content" itemprop="text">
-        <h2 id="abstract">Abstract</h2>
+        <p>This one-year student assistant’s life could be roughly divided into two phases, in the first phase, we focused on the <strong>RoboShield</strong> project while in the second part, I took more responsibility on the Python simulation environment setup.</p>
 
-<p>Autonomous odometry of aerial robots in environments that are visually degraded, such as dark evening or smoke-filled, is always hard and challenging. However, a thermal camera could be one potential solution since it performs in the long-wave infrared spectrum and is thus not affected by the scene illumination changes or certain obscurants. Inspired by this fact, this thesis proposes a thermal-inertial odometry (TIO) framework based on the visual-inertial odometry (VIO) framework considering the compatibility between those two. The TIO is tailored to utilize the full-size (16-Bit) thermal image data in feature detection and feature tracking. In parallel, a rescaled image (8-Bit) is used for loop-closure detection. The proposed TIO framework was validated with extensive datasets, including daytime and night-time scenes.</p>
+<h2 id="roboshield">RoboShield</h2>
+<p>The aim of the RoboShield project is to enable rapid market adaption while ensuring the safety of the production facility. For more specific information, please refer to the <a href="https://www.roboshield-bw.de/"><strong>website</strong></a>.</p>
 
-<h2 id="motivation">Motivation:</h2>
+<p>The whole RoboShield project are with three parts: Safety, Security and Privacy, and I focused more on the Safety part. During the project, I was responsible for dynamic Simulation for Human-Robot-Interaction in the environment Gazebo/ROS to ensure safe HRI.</p>
 
-<h3 id="why-thermal-camera">Why Thermal Camera:</h3>
+<h3 id="setup">Setup</h3>
 
-<p>Unlike the normal camera, thermal cameras are not affected by the demanding conditions like poor illumination and presence of environmental obstacle since they are sensing the Long Wave Infrared (LWIR) part of the electromagnetic spectrum.</p>
-
-<p><img src="https://s1.ax1x.com/2020/06/25/N0COAg.png" alt="comparison" style="zoom:50%;" /></p>
-
-<h3 id="why-16-bit-pipeline">Why 16-Bit Pipeline:</h3>
-
-<p>To maintain a fine sensitivity while allowing for sensing a wind range temperature mapping, thermal cameras need to report data in a higher resolution of 16-Bit. To maintain compatibility of VIO and TIO, the previous researches generally scale the 16-Bit range into 8-Bit range.  However, this will cause</p>
-
+<p>The simulation environment is a remapping of the real world setup, as shown in Picture blow, which contains three core components:</p>
 <ul>
-  <li>
-    <p>Loss of information</p>
-  </li>
-  <li>
-    <p>Attenuation of contrast when hot/ cold objects near the camera</p>
-  </li>
-  <li>
-    <p>Significant changes in the appearance of successive images when hot/cold objects enter/leave the field of vision.</p>
-  </li>
+  <li><strong>Robot Arm:</strong> A UR10e lightweight robot is used as the robot which is specially designed for collaborative operation.</li>
+  <li><strong>Laser Scanner:</strong> Environmental monitoring is carried out with a Sick MicroScan 3 pro laser scanner. The monitoring area of the scanner is divided into two areas. In the first area (between red line and yellow line in above picture) the robot speed is reduced, in the second area (between red line and the table above) the robot movement is stopped.</li>
+  <li><strong>Gripper</strong>: Used for bin-picking work task.</li>
 </ul>
 
-<p><img src="https://s1.ax1x.com/2020/06/25/N0CHnf.png" alt="rescale_problem" style="zoom:40%;" /></p>
+<p><img src="/images/project/hiwi_demonstrator_real_world.JPG" alt="logo" style="zoom:60%;" /></p>
 
-<h2 id="our-frontend-design">Our Frontend Design:</h2>
+<h3 id="remapping-to-the-gazebo-simulation-environment">Remapping to the Gazebo Simulation Environment</h3>
 
-<p>The front-end has two pipelines. For image processing, including feature detection and feature tracking, we use the 16-bit full-size image. At the same time, we use AGC to rescale the image to 8-bit for loop-closure detection. However, OpenCV does not support the 16-bit image operator fully, so we have to implement some algorithms ourselves.</p>
+<p>The simulation setup contained in this repository remaps the real world to the Gazebo environment, with all 
+necessary components included, e.g. Laser Scanner, Robot Arm. The remapping results could be shown as Picture blow.</p>
 
-<p><img src="https://s1.ax1x.com/2020/06/25/N0CbB8.png" alt="frontend" style="zoom:50%;" /></p>
+<p><img src="/images/project/hiwi_visual_gazebo_rviz.gif" alt="logo" style="zoom:60%;" /></p>
 
-<h2 id="result">Result:</h2>
+<h2 id="sensor-simulation-environment">Sensor Simulation Environment</h2>
+<p>It’s quite expensive to change sensor configuration in Gazebo, thus we created  one simulation environment with Python. In the current version, we defined three different types of sensors: Laser, Mat and Fence.</p>
 
-<h3 id="without-loop-closure">Without Loop-Closure:</h3>
-
-<p><img src="https://s1.ax1x.com/2020/06/25/N0CXNQ.png" alt="result" style="zoom:50%;" /></p>
-
-<h3 id="with-loop-closure">With Loop-Closure:</h3>
-
-<p><img src="https://s1.ax1x.com/2020/06/25/N0Cjhj.png" style="zoom:70%;" /></p>
-
+<p><img src="/images/project/hiwi_sensor_configuration.gif" /></p>
 
         
       </section>
@@ -343,11 +326,10 @@
 
   <nav class="pagination">
     
-      <a href="https://siyuanhuang95.github.io/portfolio/IPR_Hiwi/" class="pagination--pager" title="Student Assistant at IPR, Safety in Robotics
-">Previous</a>
+      <a href="#" class="pagination--pager disabled">Previous</a>
     
     
-      <a href="https://siyuanhuang95.github.io/portfolio/test-2/" class="pagination--pager" title="test test number 2
+      <a href="https://siyuanhuang95.github.io/portfolio/2020-05-15-MA_TIO/" class="pagination--pager" title="Master Thesis: Motion Estimation based on Thermal Inertial Odometry
 ">Next</a>
     
   </nav>
