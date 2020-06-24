@@ -6,15 +6,13 @@ excerpt: "In this contribution, we present two approaches yielding an automatic 
 date: 2019-06-25
 venue: 'ITG-Fachtagung Sensoren und Messsysteme 2019'
 paperurl: 'https://www.ama-science.org/proceedings/details/3383'
-citation: 'Baek, W.; Huang, S.; Ledermann, C.; Kröger, T.; Kirsten, R.
-2019. 20. GMA/ITG-Fachtagung Sensoren und Messsysteme, Nürnberg, 25.-26.Juni 2019. Proceedings, 93–99, AMA Service GmbH, Wunstorf.'
+citation: 'Baek, W.; Huang, S.; Ledermann, C.; Kröger, T.; Kirsten, R. 2019. 20. GMA/ITG-Fachtagung Sensoren und Messsysteme, Nürnberg, 25.-26.Juni 2019. Proceedings, 93–99, AMA Service GmbH, Wunstorf.'
 ---
 
 In this contribution, we present two approaches yielding an automatic generation of the optimal sensor configuration in a defined human robot collaboration scenario with respect to the compliance of the human operator's safety and the minimum floor space consumption in the working cell.
 
 
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+[Download paper here](https://github.com/SiyuanHuang95/SiyuanHuang95.github.io/tree/master/files/paper1.pdf)
 
-Recommended citation: Baek, W.; Huang, S.; Ledermann, C.; Kröger, T.; Kirsten, R.
-2019. Study of safe sensor configurations in human robot collaboration. 20. GMA/ITG-Fachtagung Sensoren und Messsysteme, Nürnberg, 25.-26.Juni 2019. Proceedings, 93–99, AMA Service GmbH, Wunstorf.
+Recommended citation: Baek, W.; Huang, S.; Ledermann, C.; Kröger, T.; Kirsten, R. 2019. Study of safe sensor configurations in human robot collaboration. 20. GMA/ITG-Fachtagung Sensoren und Messsysteme, Nürnberg, 25.-26.Juni 2019. Proceedings, 93–99, AMA Service GmbH, Wunstorf.

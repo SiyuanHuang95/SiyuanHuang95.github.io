@@ -12,4 +12,4 @@ paperurl: 'https://hri.iit.it/storage/iros-workshop2019/IROS-EPHRC_2019_paper_1.
 
 
 
-[Download paper here](http://academicpages.github.io/files/paper2.pdf)
+[Download paper here](https://github.com/SiyuanHuang95/SiyuanHuang95.github.io/tree/master/files/paper2.pdf)
