@@ -1,0 +1,32 @@
+---
+title: "Student Assistant at IPR, Safety in Robotics"
+excerpt: "From Nov. 2018 to Dez. 2019, I was the student assistant at Institute for Anthropomatics and Robotics (IAR) - Intelligent Process Automation (IPR) with [Prof.Dr.-Ing Torsten Kroeger](https://www.ipr.kit.edu/mitarbeiter_2538.php) and [M.Sc. Woo-Jeong Baek](https://www.ipr.kit.edu/mitarbeiter_3113.php), where we focused on the safe interaction between robotics and human and safety sensor configuration. <br/><img src='/images/project/hiwi_sensor_configuration.gif'>"
+collection: portfolio
+date: 2019-12-31
+---
+This one-year student assistant's life could be roughly divided into two phases, in the first phase, we focused on the RoboShield project while in the second part, I took more responsibility on the Python simulation environment setup.
+
+## RoboShield
+The aim of the RoboShield project is therefore to enable manufacturers, system integrators and end-users of industrial automation technologies to adapt to rapidly changing market conditions while ensuring the safety of the production facility. For more specific information, please refer to the [**website**](https://www.roboshield-bw.de/).
+
+The whole RoboShield project are with three parts: Safety, Security and Privacy, and I focused more on the Safety part. During the project, I was responsible for dynamic Simulation for Human-Robot-Interaction in the environment Gazebo/ROS to ensure safe HRI.
+
+<img src="/images/project/hiwi_roboshield_logo.png" alt="logo" style="zoom:60%;" />
+
+
+### Setup
+
+The simulation environment is a remapping of the real world setup, as shown in Picture blow, which contains three core components:
+- **Robot Arm:** A UR10e lightweight robot is used as the robot which is specially designed for collaborative operation.
+- **Laser Scanner:** Environmental monitoring is carried out with a Sick MicroScan 3 pro laser scanner. The monitoring area of the scanner is divided into two areas. In the first area (between red line and yellow line in above picture) the robot speed is reduced, in the second area (between red line and the table above) the robot movement is stopped.
+- **Gripper**: Used for bin-picking work task.
+
+<img src="/images/project/hiwi_demonstrator_real_world.JPG" alt="logo" style="zoom:60%;" />
+
+
+### Remapping to the Gazebo Simulation Environment 
+
+The simulation setup contained in this repository remaps the real world to the Gazebo environment, with all 
+necessary components included, e.g. Laser Scanner, Robot Arm. The remapping results could be shown as Picture blow.
+
+<img src="/images/project/hiwi_visual_gazebo_rviz.gif" alt="logo" style="zoom:60%;" />

@@ -1,6 +1,7 @@
 ---
 title: "Motion Estimation based on Thermal Inertial Odometry "
-excerpt: "This thesis proposes a thermal-inertial odometry (TIO) framework based on the visual-inertial odometry framework considering the compatibility between those two. The TIO is tailored to utilize the full-size (16-Bit) thermal image data in feature detection and feature tracking. In parallel, a rescaled image (8-Bit) is used for loop-closure detection. The proposed TIO framework was validated with extensive datasets, including daytime and night-time scenes.<br/><img src='/images/project/ma_profile.png' style='zoom:60%;'>"
+excerpt: "From Nov.2019 to June.2020 I am working with [Prof. Dr.-Ing. Gert F. Trommer](https://www.ite.kit.edu/mitarbeiter_gert_trommer.php) and [M.Sc. Christopher Doer](https://www.ite.kit.edu/mitarbeiter_christopher_doer.php) to develop a Thermal-Inertial Odometry framework to enable stable and robust motion estimation in the visually-degraded environment, lile dark evening. <br/><img src='/images/project/ma_profile.png' style='zoom:40%;'>"
+date: 2020-06-15
 collection: portfolio
 ---
 
