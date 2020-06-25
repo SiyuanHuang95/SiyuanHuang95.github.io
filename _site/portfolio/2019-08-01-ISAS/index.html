@@ -37,7 +37,7 @@
 
 
 
-  <meta property="og:description" content="From Apr. 2019 to Aug. 2019, I was with other two master students to develop one LiDAR based multiple extended object tracking framework with UKF filter at Intelligent Sensor-Actuator-System (ISAS). ">
+  <meta property="og:description" content="From Apr. 2019 to Aug. 2019, I was with other two master students to develop one LiDAR based multiple extended object tracking framework with UKF filter at Intelligent Sensor-Actuator-System (ISAS). And the motion and observation models are learned from training examples using Gaussian Process(GP). ">
 
 
 
@@ -254,7 +254,7 @@
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="LiDAR-based Extended Object Tracking and Segmentation">
-    <meta itemprop="description" content="From Apr. 2019 to Aug. 2019, I was with other two master students to develop one LiDAR based multiple extended object tracking framework with UKF filter at Intelligent Sensor-Actuator-System (ISAS). ">
+    <meta itemprop="description" content="From Apr. 2019 to Aug. 2019, I was with other two master students to develop one LiDAR based multiple extended object tracking framework with UKF filter at Intelligent Sensor-Actuator-System (ISAS). And the motion and observation models are learned from training examples using Gaussian Process(GP). ">
     <meta itemprop="datePublished" content="August 01, 2019">
     
 
@@ -277,7 +277,38 @@
       
 
       <section class="page__content" itemprop="text">
-        
+        <h2 id="motivation">Motivation</h2>
+<p>For filter-based tracking algorithm, the key components are the prediction  and  observation  models, which  probabilistically  describe the temporal evolution of the process and the measurements respectively. The parameters and noise components of the models can be estimated from training data or tuned manually. Even though such parametric models are very efficient, their predictive capabilities are limited because they often ignore hard to model aspects of the process.</p>
+
+<p>In this project, we present Gaussian Processes (GP) could be one enhancement of parametric prediction and observation for Bayes filters. To be more specific, we introduce one GP-UKF where the prediction model is learned with GP. Later on, we discussed the possibility of sensor denoise with GP.</p>
+
+<h2 id="model-overview">Model Overview</h2>
+<p>Our model consists of three main components: sensor pre-processing, observation model and one motion model, as shown in Picture below:
+<img src="/images/project/isas_model_overview.png" alt="model" style="zoom:60%;" />
+The state vector is represented as:
+<script type="math/tex">x = [x,y,sin(theta), cos(theta), length, width]</script></p>
+
+<h2 id="gp-motion-prediction">GP Motion Prediction</h2>
+<p><img src="/images/project/isas_gp_motion.png" alt="model" style="zoom:80%;" />
+Advantage:</p>
+<ul>
+  <li>Process Noise learned from the training data.</li>
+  <li>Noise model automatically adapt to the system state
+<img src="/images/project/isas_gp_motion_2.png" alt="model" style="zoom:60%;" /></li>
+</ul>
+
+<h2 id="lidar-noise-learned-with-gp">LiDAR noise learned with GP</h2>
+<p><img src="/images/project/isas_gp_noise1.png" alt="model" style="zoom:60%;" /></p>
+
+<h2 id="result">Result</h2>
+<h3 id="simulation">Simulation</h3>
+<p><img src="/images/project/isas_result1.gif" /></p>
+
+<h3 id="real-world">Real World</h3>
+<p><img src="/images/project/isas_profile.gif" /></p>
+
+<p>You can see <a href="https://drive.google.com/file/d/17AlGM_knhfVzMUHN1kvg7g9B4DI1KD7D/view?usp=sharing">Demo</a> here.</p>
+
 
         
       </section>
