@@ -24,7 +24,8 @@ Education
 
 
 
-# Internship
+Internship
+======
 
 * Daimler AG
   * Beijing Research & Design Center, Autonomous Driving& Regularization
@@ -39,19 +40,27 @@ Project Experience
   {% endfor %}</ul>
 
 Publications
-======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-# Skills
+
+Skills
+======
 
 - Programming Language: C++, Python, Matlab
 - Languages: English IELTS 7.0; German DSH 2.0; Chinese Mother Language
 - Libraries: Numpy, OpenCV, Ceres, G2O
 - Technologies: GitHub, Linux/ROS, Gazebo
 
-# Scholorship
+Scholarship
+======
 
 - Chinese Government Scholarship (CSC, funded for Master Study)
 - Chinese Government Scholarship (CSC, funded for Exchange Study)
 - "84781" scholarship (giving for the top5 student)
+
+Download CV
+======
+[Chinese Version](https://github.com/SiyuanHuang95/SiyuanHuang95.github.io/tree/master/files/chinese_cv.pdf)
+
+[English Version](https://github.com/SiyuanHuang95/SiyuanHuang95.github.io/tree/master/files/English_CV.pdf)
