@@ -19,7 +19,7 @@
 
 
 
-<title>LiDAR-based Extended Object Tracking and Segmentation - Seeing the World.</title>
+<title>Model-based Multiple Object TrackingUsing  Capacitive Proximity Sensors - Seeing the World.</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="Seeing the World.">
-<meta property="og:title" content="LiDAR-based Extended Object Tracking and Segmentation">
+<meta property="og:title" content="Model-based Multiple Object TrackingUsing  Capacitive Proximity Sensors">
 
 
-  <link rel="canonical" href="https://siyuanhuang95.github.io/portfolio/2019-08-01-ISAS/">
-  <meta property="og:url" content="https://siyuanhuang95.github.io/portfolio/2019-08-01-ISAS/">
+  <link rel="canonical" href="https://siyuanhuang95.github.io/portfolio/2019-03-15-IPR/">
+  <meta property="og:url" content="https://siyuanhuang95.github.io/portfolio/2019-03-15-IPR/">
 
 
 
-  <meta property="og:description" content="From Apr. 2019 to Aug. 2019, I was with other two master students to develop one LiDAR based multiple extended object tracking framework with UKF filter at Intelligent Sensor-Actuator-System (ISAS). And the motion and observation models are learned from training examples using Gaussian Process(GP). ">
+  <meta property="og:description" content="From Oct. 2018 to March. 2019, I was with M.Sc. Hosam Alagi and Prof. Dr.-Ing Bjoern Hein to develop an object tracking method on capacitive proximity sensor.">
 
 
 
@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2019-08-01T00:00:00+02:00">
+  <meta property="article:published_time" content="2019-03-15T00:00:00+01:00">
 
 
 
@@ -253,21 +253,21 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="LiDAR-based Extended Object Tracking and Segmentation">
-    <meta itemprop="description" content="From Apr. 2019 to Aug. 2019, I was with other two master students to develop one LiDAR based multiple extended object tracking framework with UKF filter at Intelligent Sensor-Actuator-System (ISAS). And the motion and observation models are learned from training examples using Gaussian Process(GP). ">
-    <meta itemprop="datePublished" content="August 01, 2019">
+    <meta itemprop="headline" content="Model-based Multiple Object TrackingUsing  Capacitive Proximity Sensors">
+    <meta itemprop="description" content="From Oct. 2018 to March. 2019, I was with M.Sc. Hosam Alagi and Prof. Dr.-Ing Bjoern Hein to develop an object tracking method on capacitive proximity sensor.">
+    <meta itemprop="datePublished" content="March 15, 2019">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">LiDAR-based Extended Object Tracking and Segmentation
+          <h1 class="page__title" itemprop="headline">Model-based Multiple Object TrackingUsing  Capacitive Proximity Sensors
 </h1>
           
         
         
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2019-08-01T00:00:00+02:00">August 01, 2019</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2019-03-15T00:00:00+01:00">March 15, 2019</time></p>
         
         
              
@@ -277,38 +277,13 @@
       
 
       <section class="page__content" itemprop="text">
-        <h2 id="motivation">Motivation</h2>
-<p>For filter-based tracking algorithm, the key components are the prediction  and  observation  models, which  probabilistically  describe the temporal evolution of the process and the measurements respectively. The parameters and noise components of the models can be estimated from training data or tuned manually. Even though such parametric models are very efficient, their predictive capabilities are limited because they often ignore hard to model aspects of the process.</p>
+        <h2 id="abstract">Abstract</h2>
+<p>In this work, an object tracking method on capacitive proximity sensor is presented. Arranged as a vector and installed in the sidewalls of a work table with a robot, these sensors are able to detect proximity events in the near field of the workspace, including human approaching the table or interacting with the robot. Considering the low spatial resolution of the sensors, a preprocessing method was implemented and the data for tracking was prepared. The tracking method is based on a Kalman-Filter, where the data association and occlusion problem are discussed.</p>
 
-<p>In this project, we present Gaussian Processes (GP) could be one enhancement of parametric prediction and observation for Bayes filters. To be more specific, we introduce one GP-UKF where the prediction model is learned with GP. Later on, we discussed the possibility of sensor denoise with GP.</p>
+<p>This work has been presented in IROS 2019 with a post:
+<img src="/images/project/ipr_post_crop.jpeg" /></p>
 
-<h2 id="model-overview">Model Overview</h2>
-<p>Our model consists of three main components: sensor pre-processing, observation model and one motion model, as shown in Picture below:
-<img src="/images/project/isas_model_overview.png" alt="model" style="zoom:60%;" />
-The state vector is represented as:
-<script type="math/tex">x = [x,y,sin(theta), cos(theta), length, width]</script></p>
-
-<h2 id="gp-motion-prediction">GP Motion Prediction</h2>
-<p><img src="/images/project/isas_gp_motion.png" alt="model" style="zoom:80%;" />
-Advantage:</p>
-<ul>
-  <li>Process Noise learned from the training data.</li>
-  <li>Noise model automatically adapt to the system state
-<img src="/images/project/isas_gp_motion_2.png" alt="model" style="zoom:60%;" /></li>
-</ul>
-
-<h2 id="lidar-noise-learned-with-gp">LiDAR noise learned with GP</h2>
-<p><img src="/images/project/isas_gp_noise1.png" alt="model" style="zoom:60%;" /></p>
-
-<h2 id="result">Result</h2>
-<h3 id="simulation">Simulation</h3>
-<p><img src="/images/project/isas_result1.gif" /></p>
-
-<h3 id="real-world">Real World</h3>
-<p><img src="/images/project/isas_profile.gif" /></p>
-
-<p>You can see <a href="https://drive.google.com/file/d/17AlGM_knhfVzMUHN1kvg7g9B4DI1KD7D/view?usp=sharing">Demo</a> here.</p>
-
+<p>If you are interested in this project, please check our <a href="https://hri.iit.it/storage/iros-workshop2019/IROS-EPHRC_2019_paper_1.pdf">paper</a>.</p>
 
         
       </section>
@@ -329,11 +304,10 @@ Advantage:</p>
 
   <nav class="pagination">
     
-      <a href="https://siyuanhuang95.github.io/portfolio/2019-03-15-IPR/" class="pagination--pager" title="Model-based Multiple Object TrackingUsing  Capacitive Proximity Sensors
-">Previous</a>
+      <a href="#" class="pagination--pager disabled">Previous</a>
     
     
-      <a href="https://siyuanhuang95.github.io/portfolio/2019-12-31-IPR_Hiwi/" class="pagination--pager" title="Safety in Robotics
+      <a href="https://siyuanhuang95.github.io/portfolio/2019-08-01-ISAS/" class="pagination--pager" title="LiDAR-based Extended Object Tracking and Segmentation
 ">Next</a>
     
   </nav>
